@@ -13,7 +13,7 @@ client = OpenAI(api_key=api_key)
 # 데이터프레임을 캐싱하는 함수
 @st.cache_data
 def load_data():
-    return pd.read_excel('/Users/james_kyh/Downloads/AdidasSalesdata.xlsx')
+    return pd.read_excel('https://github.com/jamesKYH/qwer/blob/44cb289286cc9cc934d3be3ac94462b629e55b4e/AdidasSalesdata.xlsx?raw=true', engine='openpyxl')
 
 # 캐싱된 데이터프레임을 불러옴
 df = load_data()
